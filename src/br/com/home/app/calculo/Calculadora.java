@@ -6,6 +6,8 @@ import br.com.home.app.logging.AppLogger;
 
 public class Calculadora {
 	
+	private String id = "abc";
+	
 	private OperacoesAritmeticas opAritmeticas = new OperacoesAritmeticas();
 
 	public double soma(double... nums) {
