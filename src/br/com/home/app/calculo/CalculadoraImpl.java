@@ -1,16 +1,18 @@
 package br.com.home.app.calculo;
 
 import static br.com.home.app.logging.AppLogger.info;
+
+import br.com.home.app.ICalculadora;
 import br.com.home.app.calculo.interno.OperacoesAritmeticas;
 import br.com.home.app.logging.AppLogger;
 
-public class Calculadora {
+public class CalculadoraImpl implements ICalculadora {
 	
 	private String id = "abc";
 	
 	private OperacoesAritmeticas opAritmeticas = new OperacoesAritmeticas();
 
-	public double soma(double... nums) {
+	public double somar(double... nums) {
 		info("Somando... ");
 		return opAritmeticas.soma(nums);
 	}
